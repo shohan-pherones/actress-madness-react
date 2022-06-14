@@ -1,0 +1,13 @@
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 1860px) {
+  .blogs {
+    grid-template-columns: 1fr;
+  }
+}
