@@ -1,0 +1,31 @@
+.about {
+  text-align: center;
+  margin: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.about p {
+  text-align: justify;
+}
+
+#read-blogs-button {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  transition: all 0.15s linear;
+  text-decoration: none;
+}
+
+#read-blogs-button:hover {
+  background-color: deeppink;
+}

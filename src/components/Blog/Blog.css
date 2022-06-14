@@ -33,11 +33,11 @@
   border-radius: 10px;
   overflow: hidden;
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .blog-details:hover {
-  border-color: rgba(255, 20, 145, 0.4);
+  border-color: rgba(255, 20, 145, 0.2);
 }
 
 .blog-details h2 {
@@ -46,7 +46,7 @@
 }
 
 .blog-details p {
-  font-size: 1rem;
+  text-align: justify;
 }
 
 .author {
