@@ -1,34 +1,53 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  let activeStyles = {
+    color: "deeppink",
+  };
   return (
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand>
-          <Link to="/home" id="logo">
+          <NavLink
+            to="/home"
+            id="logo"
+            style={({ isActive }) => (isActive ? activeStyles : undefined)}
+          >
             Actress Madness
-          </Link>
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link>
-              <Link to="/home" id="menu">
+              <NavLink
+                to="/home"
+                id="menu"
+                style={({ isActive }) => (isActive ? activeStyles : undefined)}
+              >
                 Home
-              </Link>
+              </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/blogs" id="menu">
+              <NavLink
+                to="/blogs"
+                id="menu"
+                style={({ isActive }) => (isActive ? activeStyles : undefined)}
+              >
                 Blogs
-              </Link>
+              </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/about" id="menu">
+              <NavLink
+                to="/about"
+                id="menu"
+                style={({ isActive }) => (isActive ? activeStyles : undefined)}
+              >
                 About
-              </Link>
+              </NavLink>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
