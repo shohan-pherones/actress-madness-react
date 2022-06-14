@@ -1,14 +1,18 @@
-.logo {
+#logo {
   color: deeppink !important;
   font-size: 1.8rem !important;
   font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.menu {
+#menu {
   font-size: 1.2rem;
   transition: all 0.15s linear;
+  text-decoration: none;
+  color: black;
 }
 
-.menu:hover {
+#menu:hover {
   color: deeppink !important;
 }
